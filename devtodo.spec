@@ -7,6 +7,7 @@ Summary:	Todo displays and manages heirarchical lists of prioritized tasks
 Version:	%{version}
 Release:	%{release}
 Source0:	%{name}-%{version}.tar.bz2
+Patch0:		devtodo-fix-build.patch
 URL:		http://swapoff.org/DevTodo
 Group:		Development/Other
 Buildrequires:	readline-devel ncurses-devel glibc-static-devel
@@ -26,6 +27,7 @@ For much more complete information please refer to the man page (devtodo(1)).
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 %configure
