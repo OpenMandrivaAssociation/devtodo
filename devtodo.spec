@@ -1,6 +1,6 @@
 %define	name	devtodo
-%define	version	0.1.19
-%define	release	%mkrel 2
+%define	version	0.1.20
+%define	release	%mkrel 1
 
 Name:		%{name}
 Summary:	Todo displays and manages heirarchical lists of prioritized tasks
@@ -15,19 +15,19 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	GPL
 
 %description
-Todo is a program to display and manage a hierarchical, prioritized list of 
+Todo is a program to display and manage a hierarchical, prioritized list of
 outstanding work, or just reminders.
 
 The program itself is assisted by a few shell scripts that override default
 builtins. Specifically, cd, pushd and popd are overridden so that when using
-one of these commands to enter a directory, the todo will display any 
+one of these commands to enter a directory, the todo will display any
 outstanding items in that directory.
 
 For much more complete information please refer to the man page (devtodo(1)).
 
 %prep
 %setup -q
-%patch0 -p0
+#%patch0 -p0
 
 %build
 %configure
