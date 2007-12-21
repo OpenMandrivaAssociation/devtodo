@@ -11,6 +11,7 @@ Patch0:		devtodo-fix-build.patch
 URL:		http://swapoff.org/DevTodo
 Group:		Development/Other
 Buildrequires:	readline-devel ncurses-devel glibc-static-devel
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	GPL
 
 %description
