@@ -7,12 +7,12 @@ Summary:	Todo displays and manages heirarchical lists of prioritized tasks
 Version:	%{version}
 Release:	%{release}
 Source0:	%{name}-%{version}.tar.bz2
-Patch0:		devtodo-fix-build.patch
+Patch0:		devtodo-0.1.20-fix-gcc43.patch
 URL:		http://swapoff.org/DevTodo
 Group:		Development/Other
 Buildrequires:	readline-devel ncurses-devel glibc-static-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-License:	GPL
+License:	GPLv2
 
 %description
 Todo is a program to display and manage a hierarchical, prioritized list of
@@ -27,10 +27,10 @@ For much more complete information please refer to the man page (devtodo(1)).
 
 %prep
 %setup -q
-#%patch0 -p0
+%patch0 -p1 -b .gcc43
 
 %build
-%configure
+%configure2_5x
 %make
 
 %install
