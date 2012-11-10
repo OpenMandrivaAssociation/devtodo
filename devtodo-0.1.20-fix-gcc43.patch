@@ -1,0 +1,11 @@
+diff -p -up devtodo-0.1.20/src/todoterm.cc.gcc43 devtodo-0.1.20/src/todoterm.cc
+--- devtodo-0.1.20/src/todoterm.cc.gcc43	2009-06-02 04:49:17.000000000 +0200
++++ devtodo-0.1.20/src/todoterm.cc	2009-06-02 04:50:01.000000000 +0200
+@@ -4,6 +4,7 @@
+ #ifdef USETERMCAP
+ #include <iostream>
+ #include <string>
++#include <cstdlib>
+ #include <stdexcept>
+ #include <curses.h>
+ #include <term.h>
