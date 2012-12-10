@@ -47,3 +47,64 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/*
 %{_mandir}/man1/*
 
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 0.1.20-4mdv2011.0
++ Revision: 617576
+- the mass rebuild of 2010.0 packages
+
+* Tue Jun 02 2009 Jérôme Brenier <incubusss@mandriva.org> 0.1.20-3mdv2010.0
++ Revision: 382107
+- use configure2_5x
+- fix build with gcc 4.3 (1 patch)
+- fix license (GPLv2)
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+    - kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Mon Oct 22 2007 Jérôme Soyer <saispo@mandriva.org> 0.1.20-1mdv2008.1
++ Revision: 101076
+- Version 0.1.20
+
+* Tue Aug 28 2007 Thierry Vignaud <tv@mandriva.org> 0.1.19-2mdv2008.0
++ Revision: 72306
+- patch 0: fix build
+- use %%mkrel
+
+
+* Wed Jun 08 2005 Lenny Cartier <lenny@mandriva.com> 0.1.19-1mdk
+- 0.1.19
+
+* Sat Jan 22 2005 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 0.1.18-1mdk
+- 0.1.18
+- update url
+- wipe out buildroot at the beginning of %%install, not %%prep
+- cosmetics
+
+* Wed Jun 16 2004 Lenny Cartier <lenny@mandrakesoft.com> 0.1.17-3mdk
+- rebuild
+
+* Tue Apr 29 2003 Lenny Cartier <lenny@mandrakesoft.com> 0.1.17-2mdk
+- adjust buildrequires
+
+* Thu Apr 03 2003 Lenny Cartier <lenny@mandrakesoft.com> 0.1.17-1mdk
+- 0.1.17
+
+* Fri Dec 20 2002 Lenny Cartier <lenny@mandrakesoft.com> 0.1.16-1mdk
+- 0.1.16
+
+* Wed Dec 18 2002 Lenny Cartier <lenny@mandrakesoft.com> 0.1.15-1mdk
+- 0.1.15
+- from Wesley J. Landaker <landaker@ieee.org> :
+	- Created Mandrake RPM by adapting/fixing ASPLinux specfile.
+	- Added missing files from doc directory to the specfile.
+	- Made package relocateable.
+
+* Thu Oct 18 2001 Alexandr D. Kanevskiy <kad@asplinux.ru>
+- updated to 0.1.11
+
