@@ -1,6 +1,6 @@
 %define	name	devtodo
 %define	version	0.1.20
-%define	release	%mkrel 4
+%define release	5
 
 Name:		%{name}
 Summary:	Todo displays and manages heirarchical lists of prioritized tasks
