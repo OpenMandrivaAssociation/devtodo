@@ -8,7 +8,7 @@ Version:	%{version}
 Release:	%{release}
 Source0:	%{name}-%{version}.tar.bz2
 Patch0:		devtodo-0.1.20-fix-gcc43.patch
-URL:		http://swapoff.org/DevTodo
+URL:		https://swapoff.org/DevTodo
 Group:		Development/Other
 Buildrequires:	readline-devel ncurses-devel glibc-static-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
